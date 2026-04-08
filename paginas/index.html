@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários Premium</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #9b4bae, #2b0f3a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            color: #e0b3ff;
+            margin-bottom: 10px;
+        }
+
+        form {
+            flex: 1 1 400px;
+            background: #151515;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(224, 179, 255, 0.2);
+        }
+
+        /* 🔥 TITULOS DOS FORMULÁRIOS */
+        form h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #c084fc, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: #cfcfcf;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #333;
+            background: #111;
+            color: #fff;
+        }
+
+        input:focus, select:focus {
+            border-color: #a855f7;
+            outline: none;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background: linear-gradient(135deg, #a855f7, #7e22ce);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #c084fc, #9333ea);
+        }
+
+        p {
+            text-align: center;
+            color: #e0b3ff;
+            margin-top: 10px;
+        }
+
+        /* 📱 CELULAR */
+        @media (max-width: 600px) {
+            body {
+                align-items: flex-start;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            form {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+
+        /* 📲 TABLET */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            form {
+                flex: 1 1 45%;
+            }
+        }
+
+        /* 💻 DESKTOP GRANDE */
+        @media (min-width: 1025px) {
+            form {
+                flex: 1 1 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Formulários Premium</h1>
+
+        <form>
+            <h2>Cadastro</h2>
+
+            <label>Nome</label>
+            <input type="text" placeholder="Digite seu nome">
+
+            <label>Email</label>
+            <input type="email" placeholder="Digite seu email">
+
+            <label>Senha</label>
+            <input type="password" placeholder="Digite sua senha">
+
+            <button>Cadastrar</button>
+        </form>
+
+        <form>
+            <h2>Contato</h2>
+
+            <label>Nome</label>
+            <input type="text" placeholder="Seu nome">
+
+            <label>Assunto</label>
+            <input type="text" placeholder="Assunto">
+
+            <label>Mensagem</label>
+            <input type="text" placeholder="Digite sua mensagem">
+
+            <button>Enviar</button>
+        </form>
+
+        <form>
+            <h2>Preferências</h2>
+
+            <label>Cor favorita</label>
+            <select>
+                <option>Roxo</option>
+                <option>Preto</option>
+                <option>Azul</option>
+            </select>
+
+            <label>Notificações</label>
+            <select>
+                <option>Ativado</option>
+                <option>Desativado</option>
+            </select>
+
+            <button>Salvar</button>
+        </form>
+
+    </div>
